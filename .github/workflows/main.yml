@@ -17,5 +17,5 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Start build
         run: |
-          cd ${{ github.workspace }} | bash ./build.sh
+          cd ${{ github.workspace }} |ls | bash ./build.sh
       - run: echo "🍏 This job's status is ${{ job.status }}."
