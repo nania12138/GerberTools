@@ -5,10 +5,10 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: pull
-        uses: nania12138/GerberTools@master
-        
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: Build  
-        run: ./build.sh
-        
+        uses: ./
+      - name: Build  
+        uses: bash ./build.sh
       - run: echo "🍏 This job's status is ${{ job.status }}."
