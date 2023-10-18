@@ -8,7 +8,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build  
-        uses: ./
-      - name: Build  
-        uses: bash ./build.sh
+        uses: ./build.sh
+
       - run: echo "🍏 This job's status is ${{ job.status }}."
