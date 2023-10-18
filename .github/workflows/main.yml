@@ -6,8 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@master
       - name: Build  
-        uses: ./build.sh
+        run: bash ./build.sh
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
